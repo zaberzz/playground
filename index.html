@@ -12,14 +12,14 @@
         <main>
             <section class="setting">
                 <div class="setting-container">
-                    <label>pesrpective: 0px;</label>
-                    <input type="range" min="0" max="999">
-                    <label>rotateX: 0deg;</label>
-                    <input type="range" min="-180" max="180">
-                    <label>rotateY: 0deg;</label>
-                    <input type="range" min="-180" max="180">
-                    <label>rotateZ: 0deg;</label>
-                    <input type="range" min="-180" max="180">
+                    <label>pesrpective: {{perspective}}px;</label>
+                    <input type="range" min="0" max="999" v-model="pesrpective">
+                    <label>rotateX: {{rotateX}}deg;</label>
+                    <input type="range" min="-180" max="180" v-model="rotateX">
+                    <label>rotateY: {{rotateY}}deg;</label>
+                    <input type="range" min="-180" max="180" v-model="rotateY">
+                    <label>rotateZ: {{rotateZ}}deg;</label>
+                    <input type="range" min="-180" max="180" v-model="rotateZ">
                     <button type="button">Reset</button>
                     <button type="button">Copy</button>
                 </div>
